@@ -135,5 +135,25 @@ public double avg()
         print(Root.Left);
         System.out.print(Root.Data + "\t");
         print(Root.Right);
+
+    }
+
+    private int depth (Element Root){
+        if (Root == null) {
+            return 0;
+        }
+        return 1 + depth(Root.Left) + depth(Root.Right);
+    }
+    public int depth() {
+        return depth(Root);
+    }
+    public void depth_print (Element Root) {
+        depth_print(Root, 0);
+    }
+    private void depth_print (Element Root, int depth) {
+        if (Root !=null) {
+            //return;
+        }
+
     }
 }

@@ -24,6 +24,12 @@ public class Main {
         System.out.println("Сумма элементов дерева: " + tree.sum());
         System.out.println("Количество элементов дерева: " + tree.count());
         System.out.println("Среднее-арифметическое элементов дерева: " + tree.avg());
+        System.out.println("Глубина дерева: " + tree.depth());
+
+        long start_time = System.nanoTime();
+        Tree tree2 = new Tree();
+        long end_time = System.nanoTime();
+        System.out.println("Список скопировался за %f секунд.".formatted((double)(end_time - start_time)*1e-9));
 
         UniqueTree u_tree = new UniqueTree();
         for (int i = 0; i < n; i++)
@@ -39,5 +45,6 @@ public class Main {
         System.out.println("Сумма элементов дерева: " + u_tree.sum());
         System.out.println("Количество элементов дерева: " + u_tree.count());
         System.out.println("Среднее-арифметическое элементов дерева: " + u_tree.avg());
+
     }
 }
