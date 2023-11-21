@@ -154,6 +154,9 @@ public double avg()
         if (Root !=null) {
             //return;
         }
-
     }
+    public int depth_print (int i) {
+        return depth_print(Root, i);
+    }
+    private void depth_print (Element Root, int i);
 }
